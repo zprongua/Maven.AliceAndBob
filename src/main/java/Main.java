@@ -7,15 +7,21 @@ public class Main {
     public static void main(String[] args ){
         Scanner in = new Scanner(System.in);
 
-        System.out.println("What are your names?");
+        System.out.println("What are your names? (type your name, press Enter)");
         String name1 = in.nextLine();
         String name2 = in.nextLine();
 
         if (name1.equalsIgnoreCase("Alice") || name1.equalsIgnoreCase("Bob")) {
             System.out.println("Greetings " + name1 + "!");
         }
+        else {
+            System.out.println("Go away " + name1 + "!");
+        }
         if (name2.equalsIgnoreCase("Alice") || name2.equalsIgnoreCase("Bob")) {
             System.out.println("Greetings " + name2 + "!");
+        }
+        else {
+            System.out.println("Go away " + name2 + "!");
         }
         if (!name1.equalsIgnoreCase("Alice") && !name2.equalsIgnoreCase("Alice")){
             System.out.println("Where's Alice?!");
